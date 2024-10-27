@@ -106,6 +106,7 @@ public class Principal {
         }*/
 
 
+        // **** Generar estadísiticas de las temporadas y sus episodios ****
         Map<Integer, Double> evaluacionesPorTemporada = episodios.stream()
                 .filter(e -> e.getEvaluacion() > 0.0)
                 .collect(Collectors.groupingBy(Episodio::getTemporada,
